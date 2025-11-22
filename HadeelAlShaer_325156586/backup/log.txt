@@ -1,0 +1,24 @@
+=== TASK LOG ===
+Date: Wed Nov 12 20:11:15 IST 2025
+Linux Version: macOS 15.6
+Student Name And ID: Hadeel Al-Shaer, 325156586
+------------------------------
+[OK] System loaded successfully
+Completed Tasks: 
+------------------------------
+1,Install Ubuntu,Done,High,Alex
+5,Update GitHub Repo,Done,Medium,Noa
+6,Submit Homework,Done,High,Hadeel
+8,Pay Taxes,Done,High,Maya
+Unique Priorities
+------------------------------
+High
+Low
+Medium
+Prioity
+Task Status Counts
+------------------------------
+   4 Done
+   3 In Progress
+   2 Pending
+   1 Status

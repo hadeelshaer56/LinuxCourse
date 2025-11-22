@@ -1,0 +1,28 @@
+----about Installing htop----
+Thu Nov 13 17:17:28 IST 2025
+----htop Installing details:
+==> htop: stable 3.4.1 (bottled), HEAD
+Improved top (interactive process viewer)
+https://htop.dev/
+Installed
+/opt/homebrew/Cellar/htop/3.4.1 (13 files, 389.2KB) *
+  Poured from bottle using the formulae.brew.sh API on 2025-11-13 at 17:19:10
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/h/htop.rb
+License: GPL-2.0-or-later
+==> Dependencies
+Build: autoconf, automake, libtool, pkgconf
+Required: ncurses
+==> Options
+--HEAD
+	Install HEAD version
+==> Caveats
+htop requires root privileges to correctly display all running processes,
+so you will need to run `sudo htop`.
+You should be certain that you trust any software you grant root privileges.
+==> Analytics
+install: 13,048 (30 days), 40,061 (90 days), 200,546 (365 days)
+install-on-request: 13,037 (30 days), 40,028 (90 days), 200,365 (365 days)
+build-error: 184 (30 days)
+----htop Installed version: htop 3.4.1
+----htop Installed directory: /opt/homebrew/bin/htop
+----Running htop... Thu Nov 13 17:36:49 IST 2025

@@ -1,0 +1,61 @@
+mkdir todo_system
+cd todo_system
+touch log.txt
+echo "=== TASK LOG ===" >> log.txt
+echo "Date: $(date)" >> log.txt
+echo "Linux Version: macOS $(sw_vers -productVersion)" >> log.txt
+echo "Student Name And ID: Hadeel Al-Shaer, 325156586" >> log.txt
+echo "------------------------------" >> log.txt
+echo "[OK] System loaded successfully" >> log.txt
+nano task.csv
+echo "1,Install Ubuntu,Done,High,Alex" >> task.csv
+echo "2,Write Homework,In Progress,High,Noa" >> task.csv
+echo "3,Buy Coffee,Pending,Low,Dana" >> task.csv
+echo "4,Create Backup Script,Pending,Medium,Alex" >> task.csv
+echo "5,Update GitHub Repo,Done,Medium,Noa" >> task.csv
+echo "3,Buy Coffee,Pending,Low,Dana" >> task.csv
+echo "4,Create Backup Script,Pending,Medium,Alex" >> task.csv
+echo "5,Update GitHub Repo,Done,Medium,Noa" >> task.csv
+echo "6,Submit Homework,Done,High,Hadeel" >> task.csv
+echo "7,Room Cleaning,In Progress,Low,Mark" >> task.csv
+echo -e "8,Pay Taxes,Done,High,Maya\n9,Watch F1 Race,In Progress,High,Rami" >> tasks.csv
+echo -e "8,Pay Taxes,Done,High,Maya\n9,Watch F1 Race,In Progress,High,Rami" >> task.csv
+cat task.csv
+wc -l task.csv | awk '{print "#" $2, $1}'
+echo "Completed Tasks: " >> log.txt
+echo "------------------------------" >> log.txt
+grep 'Done," >> log.txt
+grep 'Done,' >> log.txt
+grep 'Done,' task.csv >> log.txt
+cut -d',' -f2 task.csv | tee tasks_names.txt
+echo "Unique Priorities" >> log.txt
+echo "------------------------------" >> log.txt
+cut -d',' -f4 tasks.csv | sort | uniq >> log.txt
+cut -d',' -f4 task.csv | sort | uniq >> log.txt
+echo "Task Status Counts" >> log.txt
+echo "------------------------------" >> log.txt
+cut -d',' -f3 tasks.csv | sort | uniq -c >> log.txt
+cut -d',' -f3 task.csv | sort | uniq -c >> log.txt
+echo "=== PENDING TASKS ===" >> pending.txt
+grep 'Pending,' task.csv | cut -d',' -f2,4 >> pending.txt
+echo "------------------------------" >> pending.txt
+grep 'Pending,' task.csv | wc -l | awk '{print "Total pending tasks: "$1}' >> pending.txt
+echo -e "Date: $(date)\nDone Tasks: $(grep ',Done,' task.csv | wc -l)\nPending Tasks: $(grep ',Pending,' task.csv | wc -l)"
+echo -e "===DAILY REPORT===\nDate: $(date)\n\nCompleted Tasks:\n $(grep 'Done,' task.csv | cut -d',' -f2)\n\nPending Tasks:\n $(grep ',Pending,' task.csv | cut -d',' -f2)" >> report.txt
+mkdir backup
+cp *.csv *.txt backup/
+find backup -type f
+brew install wget
+wget https://jsonplaceholder.typicode.com/todos -O tasks.json
+wget https://jsonplaceholder.typicode.com/todos -O tasks.json
+curl -o tasks.json https://jsonplaceholder.typicode.com/todos
+wget https://jsonplaceholder.typicode.com/todos -O tasks.json
+cat tasks.json | head -n 5
+ls *.txt
+touch task{1..5}.txt
+cp task* backup/
+find . -type f -name "*task*" >> log.txt
+history >> history.log
+rm -r history.log
+cp ~/.zsh_history history.log
+fc -AI

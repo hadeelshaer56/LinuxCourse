@@ -1,0 +1,145 @@
+UserName:hadeelal-shaer
+Date:Thu Nov  6 16:42:40 IST 2025
+OS Version:Darwin hadeels-MacBook-Pro.local 24.6.0 Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132 arm64
+Directory:/Users/hadeelal-shaer
+-----------
+/Users/hadeelal-shaer/LinuxCourse/01_commands/ClassWork_BuildFile
+-----------
+   15  git --version
+   16  git --version
+   17  git --version
+   18  git --version
+   19  git --version
+   20  git --version
+   21  git --version
+   22  xcode-select --install
+   23  xcode-select --install
+   24  $ brew install git
+   25  $ xcode-select --install
+   26  xcode-select --install
+   27  xcode-select --install
+   28  git --version
+   29  git --version
+   30  ls
+   31  ls
+   32  mkdir WebDev
+   33  cd WebDev
+   34  git --version
+   35  git config --global user.name "hadeel al-shaer"\ngit config --global user.email "hadeelshaer56@gmail.com"\n
+   36  ls
+   37  mkdir test-git\ncd test-git\ngit init\necho "Hello Git > readme.txt\ngit add .\ngit commit -m "Initial commit"\n\n
+   38  ls
+   39  mkdir test-git\ncd test-git\ngit init\necho "Hello Git > readme.txt\ngit add .\ngit commit -m "Initial commit"\n\n
+   40  mkdir test-git
+   41  ls
+   42  cd test-git
+   43  git init
+   44  ls
+   45  echo "Hello Git > readme.txt\ngit add.\ngit commit -m "Inital Commit"
+   46  ls
+   47  git config --global user.name "hadeel al-shaer"
+   48  git config --global user.email "hadeelshaer56@gmail.com"\n
+   49  cd ..
+   50  ls
+   51  rm -m test-git 
+   52  clear
+   53  ls
+   54  cd LinuxCourse
+   55  ls
+   56  ls
+   57  code .
+   58  code .
+   59  cd 01_commands
+   60  mkdir 01_commands
+   61  cd 01_commands
+   62  mkdir A
+   63  cd ..
+   64  mkdir 01_commands/B
+   65  mkdir -p c/c1
+   66  mv c 01_commands
+   67  pwd
+   68  cd 01_commands
+   69  pwd
+   70  cd c/c1
+   71  cd ..
+   72  cd ..
+   73  ls -la
+   74  clear
+   75  cd a
+   76  cd ../B
+   77  ls
+   78  clear
+   79  ls
+   80  cd ..
+   81  ls
+   82  cd B
+   83  touch b_{1..7}
+   84  cd..
+   85  cd ..
+   86  cd B
+   87  rm b_
+   88  rm b_*
+   89  touch b_{1..7}.txt
+   90  rm b_*
+   91  touch b_0{1..7}.txt
+   92  rm b_*
+   93  clear
+   94  cd ..
+   95  mkdir -p Website/{static/{css.js},views/{html,images}}
+   96  nano data/txt
+   97  rm -r da.txt
+   98  clear
+   99  cd ..
+  100  cd 01_commands
+  101  mkdir ClassWork_BuildFile
+  102  cd ClassWork_BuildFile/
+  103  echo "UserName:$(whoami)" > data.log
+  104  echo "Date:$(Date)" > data.log
+  105  echo "UserName:$(whoami)" > data.log
+  106  echo "/n Date:$(Date)" > data.log
+  107  echo "UserName:$(whoami)" > data.log
+  108  echo "UserName:$(whoami)" >> data.log
+  109  echo "/n Date:$(Date)" >> data.log
+  110  rm -r data/log
+  111  rm -r data.log
+  112  echo "UserName:$(whoami)" >> data.log
+  113  echo "/n Date:$(Date)" >> data.log
+  114  rm -r data.log
+  115  echo "UserName:$(whoami)" >> data.log
+  116  echo "Date:$(Date)" >> data.log
+  117  clear
+  118  echo "OS Version:$(Version Linux)" >> data.log
+  119  echo "OS Version:$(--Version)" >> data.log
+  120  echo "OS Version:$(uname -a)" >> data.log
+  121  echo "OS Version:$(uname -r)" >> data.log
+  122  echo "OS Version:$(/etc/os-release)" >> data.log
+  123  echo "OS Version:$(cat /etc/os-release)" >> data.log
+  124  echo "OS Version:$(sw-vers)" >> data.log
+  125  echo "OS Version:$(uname -a)" >> data.log
+  126  echo "Directory:$(pwd)" >> data.log
+  127  clear
+  128  rm -r data.log
+  129  echo "UserName:$(whoami)" >> data.log
+  130  echo "Date:$(Date)" >> data.log
+  131  echo "OS Version:$(uname -a)" >> data.log
+  132  echo "Directory:$(pwd)" >> data.log
+  133  history 15
+  134  echo "------------" >> data.log
+  135  echo "$(pwd)" >> data.log
+  136  echo "------------" >> data.log
+  137  history 15 >> data.log
+  138  history 5 >> data.log
+  139  clear
+  140  ls -r ~ >> data.log
+  141  ls -r >> data.log
+  142  ls -r .. >> data.log
+  143  ls -r . >> data.log
+  144  clear
+  145  rm -r data.log
+  146  echo "UserName:$(whoami)" >> data.log
+  147  echo "Date:$(Date)" >> data.log
+  148  echo "OS Version:$(uname -a)" >> data.log
+  149  echo "Directory:$HOME" >> data.log
+  150  echo "-----------" >> data.log
+  151  echo "$(pwd)" >> data.log
+  152  echo "-----------" >> data.log
