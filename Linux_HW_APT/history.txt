@@ -1,0 +1,19 @@
+    1  mkdir -p Linux_HW_APT/{CLIENT/CLIENT_{1..3},SERVER/SERVER_{1..2}}
+    2  cd Linux_HW_APT/SERVER
+    3  node -v
+    4  sudo apt upgrade -y nodejs
+    5  history >> ../history.txt
+    6  echo "=== SERVER INFO LOG ===" >> server.txt
+    7  echo "hostname: $(hostname)" >> server.txt
+    8  echo "Ubuntu Version: $(lsb_release -d | cut -f2)" >> server.txt
+    9  echo "Node.js Version: $(node -v)" >> server.txt
+   10  echo "User: $(whoami)" >> server.txt
+   11  echo "Log Created at: $(date)" >> server.txt
+   12  history >> ../history.txt
+   13  cd Linux_HW_APT/CLIENT
+   14  jq --version 
+   15  curl --version
+   16  sudo apt update && sudo apt install -y curl jq
+   17  echo "Curl Version: $(curl --version | head -n1)" >> installed.txt
+   18  echo "jq Version: $(jq --version)" >> installed.txt
+   19  history >> ../history.txt
