@@ -17,3 +17,23 @@
    17  echo "Curl Version: $(curl --version | head -n1)" >> installed.txt
    18  echo "jq Version: $(jq --version)" >> installed.txt
    19  history >> ../history.txt
+   20  cd Linux_HW_APT/SERVER/SERVER_1
+   21  nano Node.js
+
+   22  cd CLIENT/CLIENT_1
+   23  curl http://localhost:3000 >> output.log
+   24  echo "|" >> output.log
+   25  curl http://localhost:3000 >> output.log
+   26  echo "|" >> output.log
+   27  curl http://localhost:3000 >> output.log
+   28  echo "|" >> output.log
+   29  curl http://localhost:3000 >> output.log
+   30  echo "|" >> output.log
+   31  curl http://localhost:3000 >> output.log
+   32  curl http://localhost:3000 | jq
+   33  cat output.log
+   34  curl http://localhost:3000 | jq >> output_$(date +%Y-%m-%d_%H-%M-%S).log
+   35  curl http://localhost:3000 | jq '.random' >> random.log
+   36  ls -l *.log
+   37  ( echo "---- install.txt ----" ; cat ../install.txt ; echo "---- log files ----" ; ls -l *.log ) | tee outputs.txt
+   38  history >> ../../history.txt
