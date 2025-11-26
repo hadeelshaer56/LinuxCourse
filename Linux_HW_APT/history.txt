@@ -19,7 +19,6 @@
    19  history >> ../history.txt
    20  cd Linux_HW_APT/SERVER/SERVER_1
    21  nano Node.js
-
    22  cd CLIENT/CLIENT_1
    23  curl http://localhost:3000 >> output.log
    24  echo "|" >> output.log
@@ -37,3 +36,9 @@
    36  ls -l *.log
    37  ( echo "---- install.txt ----" ; cat ../install.txt ; echo "---- log files ----" ; ls -l *.log ) | tee outputs.txt
    38  history >> ../../history.txt
+   39  cd CLIENT/CLIENT_2
+   40  curl http://localhost:4000 >> output_$(date +%Y-%m-%d_%H-%M-%S).log
+   41  ( echo "---- log files ----" ; ls *.log ; echo "---- log contents ----" ; cat *.log ) | tee outputs.txt
+   42  history >> ../history.txt
+   43  history >> ../../history.txt
+ 
