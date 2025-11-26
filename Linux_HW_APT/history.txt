@@ -41,4 +41,13 @@
    41  ( echo "---- log files ----" ; ls *.log ; echo "---- log contents ----" ; cat *.log ) | tee outputs.txt
    42  history >> ../history.txt
    43  history >> ../../history.txt
- 
+   44  cd CLIENT/CLIENT_3
+   45  curl "https://bookish-broccoli-4qg6xrg4vwrfjggp-8080.app.github.dev"
+   46  curl "https://bookish-broccoli-4qg6xrg4vwrfjggp-8080.app.github.dev" | jq
+   47  curl "https://bookish-broccoli-4qg6xrg4vwrfjggp-8080.app.github.dev" | jq -r '.[].url' >> url.txt
+   48  curl "https://bookish-broccoli-4qg6xrg4vwrfjggp-8080.app.github.dev" | jq -r '.[].thumbnailUrl' >> thumbnails.txt
+   49  wget -i url.txt
+   50  wget -i thumbnails.txt
+   51  cd ../..
+   52  find . -type f > allfiles.txt
+   53  history >> history.txt
