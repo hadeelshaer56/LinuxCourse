@@ -1,0 +1,7 @@
+Source,OutputName,StartQuality,FrameCount
+test.jpg,first_test,5,10
+https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg,cat_test,5,10
+no_such_file.jpg,bad_test,5,10
+https://example.com/not_an_image.jpg,url_fail,5,10
+test.jpg,missing_args
+test.jpg,weird,abc,xyz
