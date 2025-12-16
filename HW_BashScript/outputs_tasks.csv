@@ -1,0 +1,7 @@
+Source,OutputGIF,Status
+test.jpg,gifs/first_test.gif,SUCCESS
+https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg,gifs/cat_test.gif,SUCCESS
+no_such_file.jpg,gifs/bad_test.gif,FAILED
+https://example.com/not_an_image.jpg,gifs/url_fail.gif,FAILED
+test.jpg,gifs/missing_args.gif,FAILED
+test.jpg,gifs/weird.gif,FAILED

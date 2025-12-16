@@ -1,0 +1,61 @@
+Sun Dec 14 10:08:05 UTC 2025 INFO Campaign started
+Sun Dec 14 10:08:05 UTC 2025 INFO Processing SRC=test.jpg OUT=first_test Q=5 N=10
+GIF created: first_test.gif
+Sun Dec 14 10:08:06 UTC 2025 INFO Processing SRC=https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg OUT=cat_test Q=5 N=10
+--2025-12-14 10:08:06--  https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg
+Resolving upload.wikimedia.org (upload.wikimedia.org)... 185.15.59.240, 2a02:ec80:300:ed1a::2:b
+Connecting to upload.wikimedia.org (upload.wikimedia.org)|185.15.59.240|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 75375 (74K) [image/jpeg]
+Saving to: ‘source_image.jpg’
+
+     0K .......... .......... .......... .......... .......... 67% 16.1M 0s
+    50K .......... .......... ...                             100% 23.4M=0.004s
+
+2025-12-14 10:08:06 (17.9 MB/s) - ‘source_image.jpg’ saved [75375/75375]
+
+GIF created: cat_test.gif
+Sun Dec 14 10:08:07 UTC 2025 INFO Processing SRC=no_such_file.jpg OUT=bad_test Q=5 N=10
+Sun Dec 14 10:08:07 UTC 2025 ERROR Source not found: no_such_file.jpg
+Sun Dec 14 10:08:07 UTC 2025 INFO Processing SRC=https://example.com/not_an_image.jpg OUT=url_fail Q=5 N=10
+--2025-12-14 10:08:07--  https://example.com/not_an_image.jpg
+Resolving example.com (example.com)... 23.192.228.84, 23.215.0.138, 23.192.228.80, ...
+Connecting to example.com (example.com)|23.192.228.84|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-12-14 10:08:08 ERROR 404: Not Found.
+
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_01.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_02.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_03.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_04.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_05.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_06.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_07.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_08.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_09.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: insufficient image data in file `source_image.jpg' @ error/jpeg.c/ReadJPEGImage_/1184.
+convert-im6.q16: no images defined `temp_frames/img_10.jpg' @ error/convert.c/ConvertImageCommand/3234.
+convert-im6.q16: unable to open image `temp_frames/*.jpg': No such file or directory @ error/blob.c/OpenBlob/2964.
+convert-im6.q16: no images defined `url_fail.gif' @ error/convert.c/ConvertImageCommand/3234.
+GIF created: url_fail.gif
+Sun Dec 14 10:08:08 UTC 2025 ERROR Failed task SRC=https://example.com/not_an_image.jpg
+Sun Dec 14 10:08:08 UTC 2025 INFO Processing SRC=test.jpg OUT=missing_args Q= N=
+convert-im6.q16: unable to open image `temp_frames/*.jpg': No such file or directory @ error/blob.c/OpenBlob/2964.
+convert-im6.q16: no images defined `missing_args.gif' @ error/convert.c/ConvertImageCommand/3234.
+GIF created: missing_args.gif
+Sun Dec 14 10:08:08 UTC 2025 ERROR Failed task SRC=test.jpg
+Sun Dec 14 10:08:08 UTC 2025 INFO Processing SRC=test.jpg OUT=weird Q=abc N=xyz
+convert-im6.q16: unable to open image `temp_frames/*.jpg': No such file or directory @ error/blob.c/OpenBlob/2964.
+convert-im6.q16: no images defined `weird.gif' @ error/convert.c/ConvertImageCommand/3234.
+GIF created: weird.gif
+Sun Dec 14 10:08:08 UTC 2025 ERROR Failed task SRC=test.jpg
+Sun Dec 14 10:08:08 UTC 2025 INFO Campaign finished
